@@ -97,7 +97,7 @@ section h2{
     margin: 0 5%;
 }
 
-.lista-veiculos li button{
+button{
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -125,3 +125,28 @@ section h2{
     color: #ccc;
     font-size: 14px;
 }
+
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+    padding: 16px;
+}
+
+form{
+    max-width: 360px;
+}
+
+form button{
+    max-width: 120px;
+    margin-top: 16px;
+}
+

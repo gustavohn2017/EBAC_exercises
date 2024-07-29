@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(to bottom, #3498db, #8e44ad);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centraliza o conteúdo verticalmente*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/**/
+}
+
+
+/* Estilização do formulário */
+#contatoForm {
+    max-width: 30%;
+    margin: 25px auto;
+    padding: 5%;
+    border: 1px solid #8f8383;
+    background: linear-gradient(to bottom, #3498db, #8e44ad);
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Estilização dos campos de entrada */
+.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+/* Estilização do botão de envio */
+.btn-primary {
+    background-color: #c976ec;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e3d4e9;
+    color: #000000;
+    border: none;
+}
+

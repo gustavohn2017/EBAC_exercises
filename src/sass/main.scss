@@ -1,0 +1,36 @@
+@use 'sass:color';
+@use 'sass:math';
+@use 'variables';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: variables.$cor-primaria;
+  color: variables.$cor-texto;
+  margin: 0;
+  padding: variables.$padding-base;
+}
+
+h1, h2, h3 {
+  color: variables.$cor-secundaria;
+  margin-bottom: math.div(variables.$padding-base, 2);
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: variables.$padding-base;
+}
+
+.button {
+  background-color: color.scale(variables.$cor-secundaria, $lightness: -20%);
+  color: white;
+  padding: math.div(variables.$padding-base, 2);
+  border: none;
+  border-radius: variables.$border-radius-base;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: color.scale(variables.$cor-secundaria, $lightness: -25%);
+}

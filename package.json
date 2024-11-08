@@ -1,0 +1,19 @@
+{
+  "name": "ebac_m17_projeto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "lessc src/less/styles.less dist/css/styles.css",
+    "watch-less": "watch 'npm run less' src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "less": "^4.1.1"
+  },
+  "devDependencies": {
+    "watch": "^1.0.2"
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolagem de Dados RPG</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <main class="container">
+        <div class="half-container">
+            <h1>Rolagem de Dados RPG</h1>
+            <form id="dice-form">
+                <div class="form-group">
+                    <label for="dice-type">Tipo de Dado:</label>
+                    <select id="dice-type">
+                        <option value="20">d20</option>
+                        <option value="3">d3</option>
+                        <option value="4">d4</option>
+                        <option value="6">d6</option>
+                        <option value="8">d8</option>
+                        <option value="10">d10</option>
+                        <option value="12">d12</option>
+                        <option value="100">d100</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="custom-dice">Dado Personalizado:</label>
+                    <input type="number" id="custom-dice" placeholder="Ex: 1d15, 1d18, 1d30">
+                </div>
+                <div class="form-group">
+                    <label for="dice-quantity">Quantidade:</label>
+                    <input type="number" id="dice-quantity" value="1" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="modifier">Modificador:</label>
+                    <input type="number" id="modifier" value="0">
+                </div>
+                <!--ToDo: Adicionar botão de rolagem especificamente para o cara ou coroa -->
+                <div class="form-group">
+                    <label for="coin-flip">Cara ou Coroa:</label>
+                    <select id="coin-flip">
+                        <option value="cara">Cara</option>
+                        <option value="coroa">Coroa</option>
+                    </select>
+                </div>
+                <button type="button" onclick="rollDice()">Rolar Dados</button>
+            </form>
+        </div>
+        <div class="half-container">
+            <div id="result-container">
+                <div id="result"></div>
+                <div id="rolls"></div>
+            </div>
+        </div>
+    </main>
+    <div id="history-container">
+        <h2>Histórico de Rolagens</h2>
+        <ul id="history"></ul>
+    </div>
+    <script src="../dist/js/main.min.js"></script>
+</body>
+</html>

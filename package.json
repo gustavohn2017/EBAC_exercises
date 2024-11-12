@@ -1,0 +1,25 @@
+{
+  "name": "rpg_dice_roller",
+  "version": "1.0.0",
+  "description": "Projeto de rolagem de dados de RPG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "grunt less:development",
+    "less:prod": "grunt less:production",
+    "uglify": "grunt uglify",
+    "watch": "grunt watch",
+    "build": "grunt build",
+    "dev": "grunt dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-replace": "^1.0.1"
+  }
+}

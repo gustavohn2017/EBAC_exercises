@@ -1,6 +1,6 @@
 async function fetchGitHubData() {
     try {
-        const response = await fetch('https://api.github.com/users/ogiansouza');
+        const response = await fetch('https://api.github.com/users/gustavohn2017');
         const data = await response.json();
 
         document.querySelector('.profile-avatar').src = data.avatar_url;

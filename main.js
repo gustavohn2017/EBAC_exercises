@@ -8,9 +8,12 @@ const alunos = [
     { nome: 'Pedro', nota: 6.0 },
     { nome: 'Ana', nota: 9.0 },
     { nome: 'Gustavo', nota: 5.0 },
+];
 
-    ]
+function filtrarAprovados(alunos) {
+    return alunos.filter(aluno => aluno.nota >= 6.0);
+}
 
-    const aprovados = alunos.filter(aluno => aluno.nota >= 6.0)
+const aprovados = filtrarAprovados(alunos);
 
-    console.log(aprovados)
+console.log(aprovados);
